@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Multipage Resume | Ernesto L Zanabria</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="jqueryUI.css" type="text/css">
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="jQuery/jquery.min.js"></script>
+	<!-- On <head> element I have <title> element for my title in my document, then 
+	<meta> element provided structured metadata about a Web page. Used either to emulate
+	the use of an HTTP response header field, or to embed additional metadata within 
+	the HTML document.
+	<meta charset (character set)="utf-8 (is character encoding capable of encoding all characters on the web.)">
+	<meta name="viewport" contnet="width=device-width, initial-scale=1"> these tags will make a more responsive webpage.
+	Ernesto L Zanabria. Sunday, April 5, 2020.-->
+	<script>
+		$(function() {
+			var parragraph = $('#dialog').hide();
+			//By default dialog box open automatically.
+			$('#dialog').dialog({
+				modal: true,
+			});
+		});
+
+		$(function() {
+			//hiding the text.
+			var parragraph1 = $('#information').hide();
+			//using the click function.
+			$('#contact').click(function() {
+				//using slideToggle function.
+				$('#information').slideToggle('slow');	
+				});
+		});//End of contact information function.
+		
+		$(function() {
+			var paragraph2 = $('#computer').hide();
+			$('#summary').click(function() {
+				$('#computer').slideToggle('slow');
+			});
+		});//End of summary function.
+		
+		$(function() {
+			var paragraph3 = $('#associates').hide();
+			$('#education').click(function() {
+				$('#associates').slideToggle('slow');
+			});
+		});//End of education function.
+		
+		$(function() {
+			var paragraph4 = $('#abilities').hide();
+			$('#skills').click(function() {
+				$('#abilities').slideToggle('slow');
+			
+			});
+		});//End of skills and abilities function.
+		
+		$(function() {
+			var paragraph5 = $('#experienceHistory').hide();
+			$('#experience').click(function() {
+				$('#experienceHistory').slideToggle('slow');
+			
+			});
+		});//End of experience function.
+		
+	</script>
+</head>
+
+<body id="index">
+	<!-- <header> element represents inroductory content.
+	<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+	to style them with CSS or to perform certain task with JavaScript.
+	<h1> element define HTML headings.
+	<p> element represents a paragraph.
+	<a> element defines a hyperlink, which is used to link from one page to another.
+	href: attribute, which indicates the link's destination.
+	target: attribute specifies where to open the linked document. Also, can have different values: _blank (Opens the linked document a new window), 
+	_self (Opens the linked document in the same window/tab as it was clicked (this is default)), _parent (Opens the linked document in the parent frame),
+	_top (Opens the linked document in the full body of the window), framename (Opens the linked document in a named frame).
+	<hr> element is used to separate content (or define a change) in an HTML page.
+	&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	<header class="header">
+		<div class="h1">
+			<h1>RESUME</h1><!--End of my h1 element -->
+			<p class="name">Ernesto L Zanabria</p><!--End of my .name class -->
+			<p class="image"><a href="imgpic/ernestopic.jpg" target="_self"><img src="imgpic/ernestopic7.jpg" alt="Ernesto Zanabria" style="height:200px;width:200px;border-radius:50%;"></a></p>
+		</div><!--End of my .h1 class -->
+	</header><!--End of my header element -->
+	
+	&nbsp;
+	<!-- <section> element is a structural HTML element used to group together related elements.
+	<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+	to style them with CSS or to perform certain task with JavaScript.
+	<h2> element define HTML headings.
+	<p> element represents a paragraph.
+	<b> element specifies bold text is used to draw the readers' attention.
+	<a> element defines a hyperlink, which is used to link from one page to another.
+	href: attribute, which indicates the link's destination.
+	&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	<section>
+		<div id="accordion">
+			<div class="contactInformation">
+				<div class="h2">
+					<h2 id="contact">CONTACT INFORMATION</h2>
+						<div id="information">
+							<p><b>NAME:</b> Ernesto L Zanabria</p>
+							<p><b>ADDRESS:</b> 13 Rutherglen Ave.</p>
+							<p><b>PHONE NUMBER:</b>
+							<a href="tel:9543984031"> (954)398-4031</a></p>
+							<p><b>EMAIL:</b>
+							<a href="mailto:ezanabria@my.ccri.edu"> ezanabria@my.ccri.edu</a><p>
+						</div><!--End of #information id. -->
+				</div><!--End of my .h2 class -->
+			</div><!--End of .contactInformation class. -->
+			<div id="dialog" title="Welcome to my page">
+				<p>I hope this resume have the information that you need and is what you are expecting it.</p>
+			</div>
+	
+	
+			<hr><!--End of hr element -->
+			&nbsp;
+			<!-- <section> element is a structural HTML element used to group together related elements.
+			<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+			to style them with CSS or to perform certain task with JavaScript.
+			<h3> element define HTML headings.
+			<p> element represents a paragraph.
+			<b> element specifies bold text is used to draw the readers' attention.
+			<i> element represents italic content of a text.
+			<a> element defines a hyperlink, which is used to link from one page to another.
+			href: attribute, which indicates the link's destination.
+			&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+		
+			<div class="summary">
+				<div class="h3">
+					<h3 id="summary">SUMARY</h3>
+						<div id="computer">
+							<p><b><i>Computer Studies/Info.Process</i></b> eager to apply the skills learned through academic years'</p>
+							<p>willing to work in a start-up company or at a company as a <i>Developer/Programmer, Front-End Developer</i>,</p>
+							<p>or <i>Full-Stack Developer</i> currently in the <i><a href="https://www.ccri.edu/catalog/current/programs/COMI/">
+							Computer Studies/Info.Process</a> Computer Programming.</i></p>
+							<p>at <a href="https://www.ccri.edu/">CRRI</a>.</p>
+						</div><!--End of #computer. -->
+				</div><!--End of .h3 class -->
+			</div><!--End of <div> element with .summary class. -->
+			
+			
+			<hr><!--End of hr element -->
+			&nbsp;
+			<!-- <section> element is a structural HTML element used to group together related elements.
+			<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+			to style them with CSS or to perform certain task with JavaScript.
+			<h4> element define HTML headings.
+			<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+			<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+			each individual item within that list.
+			<b> element specifies bold text is used to draw the readers' attention.
+			<i> element represents italic content of a text.
+			&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+	
+			<div class="education"> 
+				<div class="h4">
+					<h4 id="education">EDUCATION</h4>
+						<div id="associates">
+							<p><b>ASSOCIATES IN SCIENCE | GRADUATING DECEMBER <i>2020</i> | <a href="https://www.ccri.edu/">COMMUNITY COLLEGE OF
+								RHODE ISLAND</a>, WARWICK, RI.</b></p><!--End of <p> element -->
+							<ul>
+								<li><b>MAJOR:</b> Computer Studies/Info.Process.</li>
+								<li><b>CONCENTRATION:</b> Computer Programming (CPRD).</li>
+							</ul><!--End of <ul> element -->
+						</div>
+				</div><!--End of .h4 class -->
+			</div><!--End of <div> element .education class -->
+	
+			<hr><!--End of hr element -->
+			&nbsp;
+			<!-- <section> element is a structural HTML element used to group together related elements.
+			<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+			to style them with CSS or to perform certain task with JavaScript.
+			<h5> element define HTML headings.
+			&amp; is a character entity used in HTML. It is "&" symbol.
+			<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+			<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+			each individual item within that list.
+			<a> element defines a hyperlink, which is used to link from one page to another.
+			href: attribute, which indicates the link's destination.
+			&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+			<div class="skills">
+				<div class="h5">
+					<h5 id="skills">SKILLS &amp; ABILITIES</h5>
+						<div id="abilities">
+							<ul>
+								<li>Intro to Computers.</li>
+								<li>Programming Concepts.</li>
+								<li>Computer Networking Linux.</li>
+								<li>System Analysis-Design.</li>
+								<li>Programming in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>.</li>
+								<li>Advance Programming in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>.</li>
+								<li>Microsoft Project 2016</li>
+								<li><a href="https://www.python.org/">Python</a>.</li>
+								<li><a href="https://www.java.com/en/">Java</a> Programming Language.</li>
+								<li>Operating System.</li>
+								<li>Business Management.</li>
+								<li><a href="https://www.w3schools.com/html/html_css.asp">HTML5/CSS</a>.</li>
+							</ul><!--End of <ul> element -->
+						</div>
+				</div><!--End of .h5 class -->
+			</div><!--End of .skills class section. -->
+			<hr><!--End of hr element -->
+			
+			
+			&nbsp;
+			<!-- <section> element is a structural HTML element used to group together related elements.
+			<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+			to style them with CSS or to perform certain task with JavaScript.
+			<h6> element define HTML headings.
+			<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+			<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+			each individual item within that list.
+			<i> element represents italic content of a text.
+			<a> element defines a hyperlink, which is used to link from one page to another.
+			href: attribute, which indicates the link's destination.
+			&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+			
+			
+			<div class="experience">
+				<div class="h6">
+					<h6 id="experience">EXPERIENCE</h6>
+					<div id="experienceHistory">
+						<p><b>PATIENT CARE PHARMACY TECHNICIAN | <a href="https://www.cvs.com/">CVS</a>, CUMBERLAND, RI | NOVEMBER <i>2019</i> TO PRESENT</b></p>
+						<div>
+							<ul>
+								<li>Setting-up desktop to retrieve information from the database.</li>
+								<li>Ensure that desktop works propertly <i>(software, hardware)</i>.</li>
+								<li>Check emails of priority task provided by a <i>Supervisor/Manager</i> for an efficient and productive workday.</li>
+								<li>Sign-in into the software <a href="https://www.avaya.com/en/">Avaya</a> to link to RxConnect to retrieve and access patients' profile.</li>
+								<li>Retrieve corporate database to get accurate information about patients' information insurance, medications, doctors, and CVS pharmacy.</li>
+								<li>Verify HIPAA <a href="https://www.cdc.gov/phlp/publications/topic/hipaa.html"><i>(Health Insurance Portability and Accountability Act of 1996)</i></a>
+								to protect patients' privacy or sensitive information.</li>
+								<li>Retrieve CRM <a href="https://support.avaya.com/products/P1645/avaya-crm-connector"><i>(Customer Relationship Management)</i></a> software
+								to see activities and documentation from other <a href="https://www.ptcb.org/credentials/certified-pharmacy-technician"><i>Pharmacy Technician</i></a> (CPhT).</li>
+								<li>Browsers <i>(Chrome, and Internet Explorer)</i>. Softwares <i>(Skype, Microsoft Word, Excel, and Access)</i> to be able to interact with other Pharmacy Technicians/Pharmacist.</li>
+							</ul><!--End of <ul> element -->
+						</div><!--End of <div> and <ul> elements. -->
+						&nbsp;
+						<!-- <div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+						to style them with CSS or to perform certain task with JavaScript.
+						<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+						<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+						each individual item within that list.
+						<i> element represents italic content of a text.
+						&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+						<div class="assistant">
+							<p><b>ASSISTANT OPERATOR II | <a href="https://www.bostonscientific.com/content/gwc/en-US/Home.html">BOSTON SCIENTIFIC</a>, COVENTRY, RI | APRIL <i>2016</i> TO NOVEMBER <i>2019</i></b></p>
+							<ul>
+								<li>Ensure that the Biological indicator is in the incubator as part of the process of the sterilization.</li>
+								<li>Get together with the team for the daily task discuss with the team members about any new procedure in the<br>
+								sterilization process that the corporation sends to operation.</li>
+								<li>Analyze the best way to execute our task for a great result.</li>
+								<li>Analytical/Leading spirit with a great focus on the production for the company and the benefit of our team.</li>
+								<li>Check emails for important task about a product to be sterilized, work with Microsoft Office.</li>
+								<li>Sterilization final process collects the Biological indicators to the Biological room and inspects them<br>
+								for a positive BI (positive virus) which an SPR (Sterilized Product Requirement) must be filled as part of the process.</li>
+							</ul><!--End of <ul> element -->
+						</div><!--End of .assistant class. -->
+						&nbsp;
+						<!-- <div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+						to style them with CSS or to perform certain task with JavaScript.
+						<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+						<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+						each individual item within that list.
+						<i> element represents italic content of a text.
+						&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+						<div class="pharmacyTech">
+							<p><b>PHARMACY TECHNICIAN I | <a href="https://www.riteaid.com/">RITE AID PHARMACY</a>, PROVIDENCE, RI | JUNE <i>2015</i> TO APRIL <i>2016</i></b></p>
+							<ul>
+								<li>Preparation of medications for patients.</li>
+								<li>Receiving and verifying the prescriptions.</li>
+								<li>Pricing and filling of prescriptions.</li>
+								<li>Obtaining pharmacist's approval.</li>
+								<li>Completing patient paperwork related to the filling of the prescriptions.</li>
+								<li>Assisting with insurance claims processing (usually a pharmacistwill handle this, but assistant's help will <br>
+								be needed - the entire process is done online.)</li>
+								<li>Ensuring the availability of drugs by delivering them to patients or facilities.</li>
+								<li>Maintaining pharmacy's (and its patients' employees') safety by adhering to infection-control procedures, <br>
+								policies, and regulations.</li>
+							</ul><!--End of <ul> element. -->
+						</div><!--End of .pharmacyTech class. -->
+						&nbsp;
+						<!-- <div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+						to style them with CSS or to perform certain task with JavaScript.
+						<ul> element defines an unordered (bulleted) list use together with the <li> tag.
+						<li> element represents a list item in ordered and unordered list. It is place inside either a <lo> tag or <ul> tag to represent
+						each individual item within that list.
+						<i> element represents italic content of a text.
+						&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+						<div class="dataEntry">
+							<p><b>DATA ENTRY PROFILE CUSTOMERS AND VERIFICATION OF CREDIT | <a href="https://www.citizensbank.com/HomePage.aspx">CITIZENS BANK</a>, EAST PROVIDENCE, RI | OCTOBER <i>2015</i>
+							TO DECEMBER <i>2015</i></b></p>
+							
+							<aside class="aboutMe">
+								<p>Determination, consistency, and passion for what you want to accomplished will determine yourself.</p>
+								<p>More About Me.<br>
+								<a href="tabs.html">"Click here to find out."</a></p>
+							</aside>
+							
+							<ul>
+								<li>Look for any discrepancies from costumers to assure the information provided is by QC department.</li>
+								<li>Processes customer and account source documents by reviewing data for deficiencies.</li>
+								<li>Resolves deficiencies by using standard procedures or returning incomplete documents to the team leader for <br>
+								resolutions.</li>
+								<li>Entering customer and account data by inputing alphabetic and numeric information on keyboard or optical <br>
+								scanner according to screen format.</li>
+								<li>Maintains data entry requirements by following data program techniques and procedures.</li>
+								<li>Contributes to team effort by accomplishing related results as needed.</li>
+								<li>Microsoft Excel and Internet Explorer to provide accurate information about any discrepancy.</li>
+							</ul><!--End of <ul> element. -->
+						</div><!--End of .dataEntry class. -->
+					</div><!--End of <div> element with #experienceHistory id. -->
+				</div><!--End of <div> with .h6 class. -->
+			</div><!--End of .experience class section. -->
+		</div><!--End of #accordion. -->
+	</section><!--End of <section> element. -->
+	
+		&nbsp;
+		<!-- <section> element is a structural HTML element used to group together related elements.
+		<div> element defines a division or a section in an HTML document. It is often used as a container for other HTML elements
+		to style them with CSS or to perform certain task with JavaScript.
+		<h6> element define HTML headings. 
+		<aside> element represents a portion of a document whose content is only indirectly related to the documents' main content.
+		<p> element represents a paragraph.
+		<a> element defines a hyperlink, which is used to link from one page to another.
+		href: attribute, which indicates the link's destination.
+		&nbsp; is a character entity used in HTML is a non-breaking space. It will not break into a new line.-->
+		
+	
+	<footer>
+		<p class="copyright">Copyright &copy; 2020 Ernesto L Zanabria, All Rights Reserved. COMMUNITY COLLEGE OF RHODE ISLAND</p>
+	</footer>
+</body>
+</html>
