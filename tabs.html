@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>First Web Page | Ernesto L Zanabria</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="jqueryUI.css" type="text/css">
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="jQuery/jquery.min.js"></script>
+	
+	<script>
+	$(function() { 
+		$('#tabs div').hide();//Hiding all content divs.
+		$('#tabs div:first').show();//showing the first content div.
+		$('#tabs ul#navTabs li:first').addClass('active');//adding active class to the first tab link.
+			
+			//Adding functionality when a tab is click.
+			$('#tabs ul#navTabs li a').click(function() {
+				$('#tabs ul#navTabs li').removeClass('active');//removing the current active class.
+				$(this).parent().addClass('active');//applying active class to the parent (li) of the link.
+				var currentTab = $(this).attr('href');//set currentTab to this link.
+				$('#tabs div').hide();//hide away all tabs.
+				$(currentTab).show();//show the current tab.
+				return false;//stop defaultlink action from happeing.
+			});//End of the functionality tab.
+	});//End of my function.
+	
+	$(function() {
+		var parragraph = $('#dialog').hide();
+		//By default dialog box open automatically.
+		$('#dialog').dialog({
+			modal: true
+		
+		});//End of dialog.
+	
+	});//End of my function.
+	
+	</script>
+</head>
+<!--
+	Ernesto L Zanabria	Sunday,April 5, 2020.-->
+
+
+<!--The <body> element contains content (both HTML elements and 
+	regular text) that will be display by the browser.-->
+<body id="linked">
+
+<!--The <section> element defines sections in a document, such as chapters, headers,
+	footer, or any other section of the document.-->
+	<section>
+	
+		<h1>"Hello World."</h1>
+		<div id="dialog" title="Welcome to my page.">
+			<p>In this page you will navigate through things that I like and things that I do.</p>
+		</div>
+		<div id="tabs">
+			<h2>You'll find out more about me by clicking the buttons below</h2>
+				<ul id="navTabs">
+					<li class="btn"><a href="#first-tab">Home</a></li>
+					<li class="btn"><a href="#second-tab">Major</a></li>
+					<li class="btn"><a href="#third-tab">Course</a></li>
+					<li class="btn"><a href="#fourth-tab">Experience</a></li>
+				</ul><!--End of #navTabs id. -->
+				
+			<div id="first-tab">
+				<h3 id="home">HOME</h3>
+				<p><b>My name is:</b> Ernesto Zanabria</p>
+				<p><b><i>Determination and Constancy</i></b> it would describe me,
+				I love to improve myself in any aspect in life, becuase every day you<br>
+				face new obstacles that wil determine how preper you are, I am concious
+				in failure but that won't stop me for what I want.<br> Also, I like to play
+				sports, and keep my body <b><i>destress</i></b>. <b><i>I run, swim, or
+				play soccer to destress my body</i></b> it is very important to release<br>
+				the stress <i>"not a good feeling"</i></p>
+			</div><!--End of first-tab id. -->
+			
+			<!--The <h3> element outline the text. It is very important when we write 
+			JavaScript to manipulate this element in the document or when we use 
+			CSS to style different HTML elements.
+			<p> element defines paragraphs in the HTML document.
+			<b> element defines bold in the HTML document.-->
+			<div id="second-tab">
+				<h3 id="major">MAJOR</h3>
+				<p><b>Major:</b> Computer Studies/Info.Process</p>
+				<p><b>Conccentration:</b> Computer Programming (CPRD)</p>
+			</div><!--End of second-tab id. -->
+			<!--The <h4> element outline the text. It is very important when we write 
+			JavaScript to manipulate this element in the document or when we use 
+			CSS to style different HTML elements.
+			<p> element defines paragraphs in the HTML document.
+			<b> element defines bold in the HTML document.
+			<i> element defines italic in the HMTL document.
+			<br> element defines break in the HTML document
+			in this case is suitable which my text is a single
+			paragraph.-->
+			<div id="third-tab">
+				<h3 id="course">COURSE</h3>
+				<p class="reason"><b>Why am I taking this course?</b></p>
+				<p><b><i>Web Developing</i></b> is a great subject to know, it is a team
+				effort with various complementary skills. There are several roles and skills:<br>
+				<i>Hardware Architec/Network Architec/Systems Engineer, System Administrator,
+				Database Administrator/Data Architec, Security Specialist,<br> Developer/Programmer,
+				Front-End Developer/UX Developer, Software Engineer.</i><br> I am currently in 
+				the process on finilizing and obtaining my degree, on which I find myself that 
+				I will be a great fit not to mention that I love WebDeveloping.</p>
+			</div><!--End of #third-tab id. -->
+			<!--The <h5> element outline the text. It is very important when we write 
+			JavaScript to manipulate this element in the document or when we use 
+			CSS to style different HTML elements.
+			<p> element defines paragraphs in the HTML document.
+			<b> element defines bold in the HTML document.
+			<i> element defines italic in the HMTL document.
+			<br> element defines break in the HTML document
+			in this case is suitable which my text is a single
+			paragraph.-->
+			<div id="fourth-tab">
+				<h3 id="experience">EXPERIENCE</h3>
+				<p class="development"><b>Experience in WebDevelopment</b></p>
+				<p>I have taken <b><i>HTML COMI-1750-601</i></b> programming languages such as:
+				<i>Python, Java, and C#</i> which will implement a lot in this class.<br> I will be 
+				learning a new programming language <i>JavaScript, and JQuery library</i> which 
+				I am curios about this new subject.</p>
+			</div><!--End of #fourth-tab id. -->
+		</div><!--End of #tabs id. -->
+		
+		<!--On this section I am using the following:
+		<p> element defines paragraphs in the HTML document.
+		<br> element defines break in the HTML document.
+		<hr> element defines a thematic break in an HTML page,
+		it is also used to separate content in an HTML page.
+		The character entity (&copy; and &nbsp;), it is a special
+		character symbol which have a reservedmeaning in HTML
+		document -->
+	</Section><!--End of <section> element. -->
+		
+	<footer>
+		<p class="rightsReserve">Copyright &copy; 2020 Ernesto L Zanabria, All Rights Reserved. COMMUNITY COLLEGE OF RHODE ISLAND</p>
+	</footer>
+</body>
+</html>
