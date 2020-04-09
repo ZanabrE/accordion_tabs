@@ -1,0 +1,258 @@
+#index * {
+	box-sizing: border-box;
+
+}/*End of my wildcard selector for my html page */
+
+#index {
+	font-family: times;
+	margin: 50px;
+	padding: 50px;
+	
+}/*End of #index id */
+
+
+#index a:link {
+	text-decoration: none;
+	
+}/*End of <a> element. */
+
+#index .header {
+	background-color: rgb(62, 89, 150);
+	border: 5px solid rgb(72, 138, 199);
+	
+}/*End of .header class */
+
+#index h1 {
+	font-size: 32pt;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	
+}/*End of h1 element */
+
+#index .name {
+	float: right;
+	font-size: 28pt;
+	color: rgb(255, 255, 255);
+	padding-right: 200px;
+	
+}/*End of .name class */
+
+#index .image {
+	margin: 20px 60px;
+	
+}/*End of .image class*/
+
+#index img {
+	border: 5px solid rgb(72, 138, 199);
+	
+}/*End of my img tag */
+
+
+/*The beginning of .contactInformation class section. */
+#index h2 {
+	font-size: 24pt;
+	color: rgb(37, 84, 199);
+	text-shadow: 2px 7px 5px #357EC7,
+				0px -4px 10px #151B54;
+				
+}/*End of h2 element */
+
+#index p {
+	font-size: 15pt;
+	
+}/*End of p element */
+
+#index b {
+	font-size: 15pt;
+	color: rgb(72, 138, 199);
+	/*text-shadow: -1px -1px 3px #357EC7;
+				2px 2px 4px #151B54;*/
+}/*End of b element */
+
+hr {
+	border: 1px solid rgb(72, 138, 199);
+	
+}
+
+
+/*The beginning of .summary class section. */
+#index h3 {
+	font-size: 24pt;
+	color: rgb(37, 84, 199);
+	text-shadow: 2px 7px 5px #357EC7,
+				0px -4px 10px #151B54;
+	
+}/*End of h3 element */
+
+/*The beginning of .education class section */
+#index h4 {
+	font-size: 24pt;
+	color: rgb(37, 84, 199);
+	text-shadow: 2px 7px 5px #357EC7,
+				0px -4px 10px #151B54;
+	
+}/*End of h4 element */
+
+
+#index ul {
+	list-style-type: circle;
+	font-size: 16pt;
+	
+}/*End of <ul> element */
+
+
+/*The beginning of .skills class section */
+#index h5 {
+	font-size: 24pt;
+	color: rgb(37, 84, 199);
+	text-shadow: 2px 7px 5px #357EC7,
+				0px -4px 10px #151B54;
+	
+}/*End of <h5> element */
+
+
+/*The beginning of .experience class section */
+#index h6 {
+	font-size: 24pt;
+	color: rgb(37, 84, 199);
+	text-shadow: 2px 7px 5px #357EC7,
+				0px -4px 10px #151B54;
+	
+}/*End of <h6> element. */
+
+/*The beginningof .aboutMe class section. */
+#index .aboutMe {
+	width: 30%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}/*End of .aboutMe class <aside> element.*/
+
+
+#index footer {
+	background-color: rgb(62, 89, 150);
+	border: 5px solid rgb(72, 138, 199);
+	text-align: center;
+
+}/*End of <footer> element. */
+
+#index .copyright {
+	color: rgb(255, 255, 255);
+	
+}/*End of .copyright class <p> element. */
+
+
+
+
+/*This is the beginning of the tabs.html page. */
+#linked * {
+	box-sizing: border-box;
+
+}/*End of my wildcard selector for my html page */
+
+#linked {
+	font-family: times;
+	margin: 50px;
+	padding: 50px;
+	
+}/*End of #linked id */
+
+#linked h1 {
+	background-color: rgb(62, 89, 150);
+	border: 5px solid rgb(72, 138, 199);
+	font-size: 32pt;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	
+}/*End of <h1> element */
+
+#linked h2 {
+	font-size: 20pt;
+	color: rgb(37, 84, 199);
+	text-shadow: 2px 7px 5px #357EC7,
+				0px -4px 10px #151B54;
+}
+
+#linked #navTabs {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	
+}/*End of of my #navTabs id. */
+
+#linked #navTabs li {
+	display: inline-block;
+	font-size: 18px;
+	float: left;
+	padding: 15px 32px;
+	text-decoration: none;
+	background-color: rgb(62, 89, 150);
+	border-top:4px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	
+}/*End of <ul> element for navigation*/
+
+
+#linked li a {
+	color: rgb(255, 255, 255);
+	
+}
+
+#linked h2 {
+	font-size: 16pt;
+	
+}/*End of <h2> element. */
+
+#linked h3 {
+	font-size: 16pt;
+	clear: both;
+	
+}/*End of <h3> element. */
+
+#linked b {
+	font-size: 16pt;
+	color: rgb(72, 138, 199);
+	
+}/*End of <b> element. */
+
+#linked p {
+	font-size: 16pt;
+	
+	
+}/*End of <p> element. */
+
+#linked #major {
+	font-size: 16pt;
+	
+}/*End of <h3> element */
+
+#linked #course {
+	font-size: 16pt;
+	
+}/*End of <h4> element*/
+
+
+#linked #experience {
+	font-size: 16pt;
+	
+}/*End of <h5> element*/
+
+
+#linked footer {
+	background-color: rgb(62, 89, 150);
+	border: 5px solid rgb(72, 138, 199);
+	text-align: center;
+	
+}/*End of <footer> element. */
+
+#linked .rightsReserve {
+	color: rgb(255, 255, 255);
+	
+}/*End of .rightsReserve class <footer> element. */
+
+
+
+
