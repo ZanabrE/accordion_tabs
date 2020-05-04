@@ -17,7 +17,7 @@
 	Ernesto L Zanabria. Sunday, April 5, 2020.-->
 	<script>
 		$(function() {
-			var parragraph = $('#dialog').hide();
+			$('#dialog').hide();
 			//By default dialog box open automatically.
 			$('#dialog').dialog({
 				modal: true,
@@ -26,7 +26,7 @@
 
 		$(function() {
 			//hiding the text.
-			var parragraph1 = $('#information').hide();
+			$('#information').hide();
 			//using the click function.
 			$('#contact').click(function() {
 				//using slideToggle function.
@@ -35,21 +35,21 @@
 		});//End of contact information function.
 		
 		$(function() {
-			var paragraph2 = $('#computer').hide();
+			$('#computer').hide();
 			$('#summary').click(function() {
 				$('#computer').slideToggle('slow');
 			});
 		});//End of summary function.
 		
 		$(function() {
-			var paragraph3 = $('#associates').hide();
+			$('#associates').hide();
 			$('#education').click(function() {
 				$('#associates').slideToggle('slow');
 			});
 		});//End of education function.
 		
 		$(function() {
-			var paragraph4 = $('#abilities').hide();
+			$('#abilities').hide();
 			$('#skills').click(function() {
 				$('#abilities').slideToggle('slow');
 			
@@ -57,7 +57,7 @@
 		});//End of skills and abilities function.
 		
 		$(function() {
-			var paragraph5 = $('#experienceHistory').hide();
+			$('#experienceHistory').hide();
 			$('#experience').click(function() {
 				$('#experienceHistory').slideToggle('slow');
 			
